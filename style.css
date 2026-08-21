@@ -1,0 +1,97 @@
+/* === 1. GLOBAL RESET + BOX-SIZING === */
+* { box-sizing: border-box; }
+
+body {
+    background: #f2f2f2;       /* light page background (kept from your original) */
+    font-family: Arial;        /* global font (kept from your original) */
+    margin: 0;                 /* remove default body margin */
+}
+
+/* === 2. NAVIGATION LAYOUT WITH FLEXBOX === */
+nav {
+    display: flex;             /* flex container */
+    gap: 16px;                 /* space between links */
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+/* === 3. CARD STYLES (Box Model) === */
+.card {
+    background-color: #ffffffd0; /* default, overridden per card below */
+    padding: 20px;             /* inner spacing */
+    margin: 20;                 /* spacing handled by flex gap below */
+    border: 3px solid #555555; /* thicker, darker border */
+    border-radius: 8px;        /* rounded corners */
+    flex: 1 1 250px;           /* grow/shrink, min width for wrapping */
+}
+
+/* === 4. FLEX CONTAINER FOR CARDS === */
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;           /* cards drop to next line on narrow screens */
+    padding: 20px;
+}
+
+/* === EXTRA: PAGE HEADER + FOOTER === */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 0.9em;
+    color: #555;
+    border-top: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+table thead {
+    background-color: #e0e0e0;
+}
+
+/* === INDIVIDUAL CARD BACKGROUND COLOURS === */
+.card-about {
+    background-color: #d0e8ff; /* light blue */
+}
+
+.card-skills {
+    background-color: #d4f7d4; /* light green */
+}
+
+.card-schedule {
+    background-color: #fff3cd; /* light yellow */
+}
