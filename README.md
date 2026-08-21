@@ -31,20 +31,6 @@ A two-page mini profile website built using only HTML and CSS. This project demo
 - Working navigation links between pages
 - Contact form with proper labels and inputs
 
-## 📁 Project Structure
-
-Mini-Profile-Website/
-├── index.html # Home page
-├── contact.html # Contact page
-├── styles.css # Global styles
-├── screenshot.jpg # Screenshot evidence
-└── [your-image].jpg # Profile image
-
-
-## 📸 Screenshot
-
-![Website Screenshot](screenshot.jpg)
-
 ## 👨‍💻 Author
 
 **Danial Arifuzzaman**  
